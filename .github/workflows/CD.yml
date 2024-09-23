@@ -39,6 +39,8 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: Semantic Release
-      uses: semantic-release/github-action@v2
+      uses: cycjimmy/github-action@v4
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      with:
+        branch: main
