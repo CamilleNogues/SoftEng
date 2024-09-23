@@ -10,7 +10,8 @@ env:
 jobs:
   format:
     uses: Geode-solutions/actions/.github/workflows/format.yml@master
-    secrets: ${{ secrets.TOKEN }}  # Les secrets doivent être passés dans "with" ou "env"
+    secrets: 
+      token: ${{ secrets.TOKEN }}
 
   build:
     runs-on: ubuntu-latest
